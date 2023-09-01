@@ -72,6 +72,7 @@
     - 입력한 값이 1 ~ 9사이인지 확인
     -> 변경사항 없음  
     <br>
+
     ```swift
     let userNumbers = userInput.split(separator: " ").compactMap { Int($0) }
     
@@ -79,11 +80,13 @@
         return nil
     }
     ```
-     20줄 가량의 코드가 3줄로 요약되었다.
+    
+  20줄 가량의 코드가 3줄로 요약되었다.
      
 - **스트라이크, 볼 계산 함수 구현**
   - enumerated()함수를 사용하여 usernumber의 인덱스와 computerrandomnumber의 인덱스 비교
   - 스트라이크가 아닐때만 볼을 검사
+
     ```swift
     for (index, number) in userNumbers.enumerated() {
         if number == randomNumbers[index] {
